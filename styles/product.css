@@ -1,0 +1,286 @@
+@import url(./font-face.css);
+
+* {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.visually_hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.body {
+  max-width: 1920px;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+
+.item_3d {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./../img/item.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+
+.body_wrapper {
+  max-width: 1688px;
+  padding: 64px 120px;
+  padding-bottom: 0;
+  margin: 0 auto;
+  box-sizing: content-box;
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 162px;
+}
+
+.header_links {
+  display: flex;
+  column-gap: 80px;
+}
+
+.header_link {
+  font-family: 'TradeGothic LT CondEighteen';
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.header_link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #131212;
+}
+
+.header_profile_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 36px;
+}
+
+.header_profile_wrapper a {
+  display: flex;
+}
+
+.header_shopping_bag {
+  position: relative;
+}
+
+.header_shopping_bag_number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff0000;
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'HelveticaNeueCyr';
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.main_info_wrapper {
+  max-width: 488px;
+}
+
+.main_info_category {
+  font-family: 'TradeGothic LT CondEighteen';
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #131212;
+  margin-bottom: 12px;
+}
+
+.main_info_title {
+  font-family: 'TradeGothic LT CondEighteen';
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: uppercase;
+  color: #131212;
+  margin-bottom: 24px;
+}
+
+.main_info_desc {
+  font-family: 'HelveticaNeueCyr';
+  font-size: 20px;
+  line-height: 30px;
+  color: #131212;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+.main_info_video_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  font-family: 'TradeGothic LT CondEighteen';
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #131212;
+}
+
+.main_info_video_wrapper * {
+  cursor: pointer;
+}
+
+.main_bottom_btn_wrapper {
+  margin-top: 127px;
+  position: relative;
+  display: flex;
+}
+
+.main_bottom_btn {
+  font-family: 'TradeGothic LT CondEighteen';
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #131212;
+  transform: rotate(-90deg) translate(-80px, -48px);
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+.main_settings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  max-width: 320px;
+}
+
+.main_settings_title {
+  font-family: 'TradeGothic LT CondEighteen';
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #131212;
+  margin-bottom: 28px;
+}
+
+.main_settings_color_items_wrapper,
+.main_settings_size_items_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main_settings_color_item,
+.main_settings_size_item {
+  cursor: pointer;
+}
+
+.main_settings_size_item {
+  font-family: 'HelveticaNeueCyr';
+  font-size: 16px;
+  line-height: 24px;
+  color: #131212;
+  border: 1px solid rgba(19, 18, 18, 0.1);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_settings_color_item {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+
+.main_settings_color_item.brown {
+  background-color: #b6a179;
+}
+
+.main_settings_color_item.black {
+  background-color: #272425;
+}
+
+.main_settings_color_item.blue {
+  background-color: #6389cb;
+}
+
+.main_settings_color_item.yellow {
+  background-color: #f2c758;
+}
+
+.main_settings_color_item.white {
+  background-color: #ffffff;
+}
+
+.main_bottom_btn_links_wrapper {
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 24px;
+}
+
+.main_bottom_btn_links_wrapper a {
+  display: flex;
+}
+
+.footer {
+  background-color: #ffffff;
+  font-family: 'TradeGothic LT CondEighteen';
+  color: #131212;
+  padding: 54px 80px;
+}
+
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_buttons {
+  display: flex;
+  column-gap: 56px;
+}
+
+.footer_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer_btn_title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footer_cart_add {
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}

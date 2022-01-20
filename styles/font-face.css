@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'TradeGothic LT CondEighteen';
+  font-style: normal;
+  src: url('./../assets/fonts/TradeGothicLTCondEighteen.ttf') format('ttf'),
+    url('./../assets/fonts/TradeGothicLTCondEighteen.woff2') format('woff2'),
+    url('./../assets/fonts/TradeGothicLTCondEighteen.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  src: url('./../assets/fonts/HelveticaNeueCyr.ttf') format('ttf'),
+    url('./../assets/fonts/HelveticaNeueCyr.woff2') format('woff2'),
+    url('./../assets/fonts/HelveticaNeueCyr.woff') format('woff');
+}
